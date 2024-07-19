@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        #happy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            height: auto;
+        }
+        #container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+        }
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 2px solid #b2ebf2;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #00acc1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #00838f;
+        }
+        #tasks {
+            width: 100%;
+            margin-top: 20px;
+            background-color: #f1f8e9;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .del {
+            background-color: #e57373;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .del:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div id="happy">
+        <div id="container">
+            <input type="text" placeholder="Add your tasks" id="word">
+            <button id="but">ADD</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+    <script src="./list.js"></script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #happy{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: aqua;
+            width: 50%;
+            /* min-width: 350px; */
+            height: 400px;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            border-radius: 10px;
+            width: 50%
+        }
+        button{
+            width: 60px; 
+            height: 40px; 
+        }
+        #tasks{
+            width: 300px;
+            margin-top: 10px;
+            background-color: beige;
+            display: flex;
+            flex-direction: column
+        }
+        .del{
+            margin-left: 200px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="happy">
+        <div id="container">
+            <input type="text" placeholder="add your asks" id="word">
+            <button id="but">ADD</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+    <script src="./list.js"></script>
+</body>
+</html> -->
